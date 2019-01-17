@@ -10,7 +10,15 @@ public class QueueADT
 
 	void enqueue(int value)
 	{
-
+		if(isFull())
+		{
+			System.out.println("OverFlow!");
+		}
+		else
+		{
+			rear++;
+			queue[rear]=value;
+		}
 	}
 
 	int dequeue()
