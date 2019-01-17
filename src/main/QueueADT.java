@@ -54,7 +54,7 @@ public class QueueADT
 
 	boolean isFull()
 	{
-		if(front==queue.length-1)
+		if(front==size-1)
 		{
 			return true;
 		}
