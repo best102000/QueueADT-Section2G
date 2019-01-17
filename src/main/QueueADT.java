@@ -16,6 +16,10 @@ public class QueueADT
 		}
 		else
 		{
+			if(front==-1 && rear==-1)
+			{
+				front = 0;
+			}
 			rear++;
 			queue[rear]=value;
 		}
